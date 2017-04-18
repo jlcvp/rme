@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/jlcvp/rme.svg?branch=master)](https://travis-ci.org/jlcvp/rme)
+
 What is this?
 =============
 
