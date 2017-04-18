@@ -1,0 +1,25 @@
+sudo: required
+dist: trusty
+language: cpp
+compiler:
+  - gcc 
+cache: apt
+addons:
+  apt:
+    packages: 
+      - libboost-dev
+      - libboost-system-dev      
+      - libboost-thread-dev
+      - libpugixml-dev
+      - build-essential
+      - libglu1-mesa-dev 
+      - libwxgtk3.0-dev
+      - libarchive-dev
+      - freeglut3-dev 
+      - libxmu-dev
+      - libxi-dev
+before_script:
+  - mkdir build && cd build  
+  - cmake ..
+script:
+- make -j `nproc`
